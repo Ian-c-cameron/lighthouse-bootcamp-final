@@ -1,54 +1,24 @@
-# React + Express No-Fluff Boilerplate
+# LHL Final Project
 
-A boilerplate project for anyone interested in making a project that uses React and Express.
+This was created as the final project for Lighthouse Labs Web Development Bootcamp.
+ 
+A web application designed to target the need to schedule work groups within an organization. Wehave chosen a landscaping company as an example and tailored the features of the web applicationto the common requirements of the landscaping industry. The application can potentially be usedacross many different industries, because there’s a global need for scheduling and forming workgroups.
+The default view when you click on a day is a list of all jobs for that day. Having a view of all jobs for a given day is really useful because it facilitates decision making. Each job is labelled with its name, the number of workers assigned to that job and the estimated time it will take. The user gets a snapshot of how each day looks like and can make decisions accordingly. 
 
-This repository is a bootleg of @NimaBoscarino's [React Rails Boilerplate](https://github.com/NimaBoscarino/react-rails-boilerplate). It uses the same React app, but replaces the Rails server with an Express server.
+New Job form can be accessed right from the main view and the user can easily find a spot for the new job in the calendar.
 
-Note! This boilerplate has _no fluff_! That means that there's nothing set up for you to do authentication stuff, there's no Redux stuff, and there's no React Router stuff. On the Express end, there is no session storage or database connection.
+Clicking on Details or on any job in the calendar will display important information about that job. This information is only displayed upon request by clicking the section the user is interested in, for example, Customer information.  The Requirements section, is a list of all tasks related to the selected job, with the number of workers and amount of time required to complete it. This is valuable information that can be used for scheduling and costing estimates. The Difficulty value is used by the program to filter the list of employees and only look for workers with a certain skill level. Below, in the Assignments table, the names of the assigned workers are displayed with the date and time of the assignment.
 
-The main important bit is that the React project has `proxy` set to `localhost:8080` in the `package.json` file, and that the Express app listens to port 8080 in `server.js`. Take a look!
+This project has been created with Node, Express and PostgreSQL in the back-end, and React and Material UI in the front-end.
 
-You can (and perhaps should) rename the directories `express-back-end` and `react-front-end` if you want-- The name doesn't matter.
+## Getting started
+1. Install dependencies using the `npm install` command.
+2. Start the web server from root directory using the `npm start` command.
+3. Go to /react-front-end and use `npm start` command to serve the app at <http://localhost:4000/>.
 
-## Running the projects
+## Deployed Version
+<https://lighthouse-bootcamp-final.herokuapp.com/>
 
-You need **TWO** terminal windows/tabs for this (or some other plan for running two Node processes).
+## Screenshots
 
-In one terminal, `cd` into `react-front-end`. Run `npm install` or `yarn` to install the dependencies. Then run `npm start` or `yarn start`, and go to `localhost:3000` in your browser.
-
-In the other terminal, `cd` into `express-back-end`. Run `npm install` or `yarn` to install the dependencies, then `npm start` or `yarn start` to launch the server.
-
-In the browser, you can click on the button and see the data get loaded.
-
-If this doesn't work, please message me!
-
-## database setup 
-from your vagrant machine:
- run `psql -U development` password `development`
- `CREATE DATABASE teams`
- Exit 
- cd into the backend folder and run `npm run reset` it will ask you for the password which is `development` in each query run 8 times
-
-## Next steps
-
-From here, you can start working on your project!
-
-As soon as the dependencies are installed, your Express server can serve JSON and static assets (like images) in response to API calls from the React app. You can get started on developing your React app, routing plan, etc. right away! Any request that isn't handled by React is passed on to the Express server. That means that you can call a route like `/api/users` from React using `fetch`, `axios`, or something else, and Express will receive it as though they originated from the same app. For routing, best practice is to namespace all of your data routes to `/api`, so that they don't clash with other routing schemes, like React Router.
-
-At some point, you'll likely want to install and configure a database driver for Postgres or MongoDB-- Refer to past projects for hints on how to do this.
-
-And don't forget to update the README!
-
-## Example Projects
-
-You might want to look at examples of projects that have used this boilerplate for hints on how to extend it. Here are a few:
-
-* [Later Cart](https://github.com/bonitac/later-cart)
-* [Buddi.io](https://github.com/Danny-Tran/buddi.io)
-
-If you'd like your project added to the list, please shoot me a message.
-
-## Contact
-
-Please contact me on Slack (@garrettgsb) or Nima at `nima@lighthouselabs.com` if you have any questions, requests, or feedback, or post an issue to this repo. If you are using the boilerplate, I'd love to hear from you as well!
 
