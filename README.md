@@ -20,5 +20,9 @@ This project has been created with Node, Express and PostgreSQL in the back-end,
 <https://lighthouse-bootcamp-final.herokuapp.com/>
 
 ## Screenshots
+!["Main View"](https://raw.githubusercontent.com/Ian-c-cameron/lighthouse-bootcamp-final/master/docs/Main-view.npg.png)
+!["Job Summary"](https://raw.githubusercontent.com/Ian-c-cameron/lighthouse-bootcamp-final/master/docs/Job-summary.npg.png)
+!["Edit View"](https://raw.githubusercontent.com/Ian-c-cameron/lighthouse-bootcamp-final/master/docs/Edit-view.npg.png)
+
 
 
